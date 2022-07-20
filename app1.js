@@ -19,17 +19,6 @@ app.get("/" , function(req , res){
 });
 
 
-app.get("/joke" , function(req , res){
-	var joke = "what do you call a dog tht does magic tricks? a labracadabrador.";
-	res.send(joke);
-});
-
-
-app.get("/random_num", function(req, res){
- var num = Math.floor((Math.random() * 10) + 1);
- res.send("Your lucky number is " + num);
-});
-
 app.listen(3000 , function(){
 	console.log("Server running on 3000!");
 });
